@@ -29,18 +29,18 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Mas
+              Más
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/notes">Mis Notas</a>
-              <a class="dropdown-item" href="/notes/add">Agregar Nota</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/auth/logout">Cerrar sesion</a>
+              <li><a class="dropdown-item" href="/notes">Mis Notas</a></li>
+              <li><a class="dropdown-item" href="/notes/add">Agregar Nota</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/auth/logout">Cerrar sesión</a></li>
             </ul>
           </li>
         {{else}}
           <li class="nav-item">
-            <a class="nav-link" href="/auth/signin">Iniciar Sesion</a>
+            <a class="nav-link" href="/auth/signin">Iniciar Sesión</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/auth/signup">Registrarse</a>

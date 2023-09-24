@@ -1,8 +1,10 @@
 body {
-  background-image: url("../img/back.jpg");
+  /* background-image: url("../img/back.jpg");
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background-color: #f8f9fa;
+  color: #333; 
 }
 
 .logo {

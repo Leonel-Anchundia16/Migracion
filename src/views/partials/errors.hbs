@@ -1,23 +1,29 @@
-{{#if error}}
-  <div class="alert alert-danger alert-dismissible fade show" role="alert">
-    {{error}}
-    <button
-      type="button"
-      class="btn-close"
-      data-bs-dismiss="alert"
-      aria-label="Close"
-    ></button>
-  </div>
-{{/if}}
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      {{#if error}}
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{error}}
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+      {{/if}}
 
-{{#each errors}}
-  <div class="alert alert-danger alert-dismissible fade show" role="alert">
-    {{text}}
-    <button
-      type="button"
-      class="btn-close"
-      data-bs-dismiss="alert"
-      aria-label="Close"
-    ></button>
+      {{#each errors}}
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{text}}
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+      {{/each}}
+    </div>
   </div>
-{{/each}}
+</div>
